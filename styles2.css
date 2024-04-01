@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    border: 1px solid black;
+    width:500px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    position: absolute;
+    /* background-color: aquamarine; */
+    border: 1px solid grey;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 260px;
+}
+
+.card::before {
+    content: "X";
+    position: absolute;
+    left:5px;
+    top: 5px;
+    color: grey;
+
+}
+
+.card::after {
+    content: "9";
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+}
+
+.card img{
+    width: 200px;
+    padding-top: 10px;
+    border-bottom: 1px solid grey;
+}
+
+h4 {
+    /* display: block; */
+    text-align: center;
+    padding-block: 10px;
+}
